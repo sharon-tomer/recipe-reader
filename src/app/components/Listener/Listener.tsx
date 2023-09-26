@@ -1,9 +1,9 @@
 "use client"
+import Artyom from "artyom.js"
 
 export default function Listener(props: {}) {
-    let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-    let SpeechGrammarList = SpeechGrammarList || window.webkitSpeechGrammarList
-    let SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+    const artyom = new Artyom();
+    
     function listen () {
 
     }
