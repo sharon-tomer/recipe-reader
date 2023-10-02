@@ -2,21 +2,28 @@
 
 type VoiceChoice = SpeechSynthesisVoice | undefined;
 
-export default function Reader(props: {text: string}) {
-    if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance();
-        utterance.lang='en-US';
-        utterance.text = props.text;
-        const customVoice = getVoiceToUse();
-        if(customVoice) {
-            utterance.voice = customVoice;
+export default class Reader {
+    utterance;
+
+    constructor(){
+        if ('speechSynthesis' in window) {
+            this.utterance = new SpeechSynthesisUtterance();
+            this.utterance.lang='en-US';
+            const customVoice = this.#getVoiceToUse();
+            if(customVoice) {
+                this.utterance.voice = customVoice;
+            }
+        } else {
+            throw("Sorry, your browser doesn't support text to speech!")
         }
-        window.speechSynthesis.speak(utterance);
-    } else {
-        // Speech Synthesis Not Supported 😣
-         alert("Sorry, your browser doesn't support text to speech!");
     }
-    function getVoiceToUse(voiceName?: string) {
+
+    read(text: string) {
+        this.utterance.text = text;
+        window.speechSynthesis.speak(this.utterance);
+    }
+
+    #getVoiceToUse(voiceName?: string) {
         let choice: VoiceChoice = undefined;
         const voiceCandidates = [
             'Google US English',

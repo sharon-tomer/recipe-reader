@@ -1,0 +1,178 @@
+{
+    "recipes": [
+      {
+        "name": "Spaghetti Carbonara",
+        "ingredients": [
+          { "description": "Spaghetti", "quantity": 200, "unit": "g" },
+          { "description": "Bacon", "quantity": 100, "unit": "g" },
+          { "description": "Eggs", "quantity": 2, "unit": "" },
+          { "description": "Parmesan cheese", "quantity": 50, "unit": "g" },
+          { "description": "Black pepper", "quantity": null, "unit": "to taste" }
+        ],
+        "steps": [
+          {
+            "instruction": "Cook the spaghetti according to package instructions.",
+            "ingredients_added": []
+          },
+          {
+            "instruction": "In a pan, fry the bacon until crispy. Remove excess fat.",
+            "ingredients_added": []
+          },
+          {
+            "instruction": "In a bowl, whisk together eggs and grated Parmesan cheese.",
+            "ingredients_added": ["Eggs", "Parmesan cheese"]
+          },
+          {
+            "instruction": "Combine cooked spaghetti with the egg and cheese mixture. Toss until coated.",
+            "ingredients_added": ["Spaghetti"]
+          },
+          {
+            "instruction": "Add the crispy bacon, season with black pepper, and serve.",
+            "ingredients_added": ["Bacon", "Black pepper"]
+          }
+        ]
+      },
+      {
+        "name": "Chicken Stir-Fry",
+        "ingredients": [
+          { "description": "Chicken breast", "quantity": 300, "unit": "g" },
+          { "description": "Broccoli florets", "quantity": 1, "unit": "cup" },
+          { "description": "Bell peppers", "quantity": 2, "unit": "" },
+          { "description": "Soy sauce", "quantity": 2, "unit": "tbsp" },
+          { "description": "Garlic", "quantity": 2, "unit": "cloves" },
+          { "description": "Ginger", "quantity": 1, "unit": "inch piece" }
+        ],
+        "steps": [
+          {
+            "instruction": "Slice the chicken into thin strips.",
+            "ingredients_added": ["Chicken breast"]
+          },
+          {
+            "instruction": "In a wok or large pan, heat oil over high heat.",
+            "ingredients_added": []
+          },
+          {
+            "instruction": "Add minced garlic and ginger, and sauté for a minute.",
+            "ingredients_added": ["Garlic", "Ginger"]
+          },
+          {
+            "instruction": "Add chicken strips and stir-fry until cooked through.",
+            "ingredients_added": ["Chicken breast"]
+          },
+          {
+            "instruction": "Add broccoli and bell peppers, stir-fry for another 3-4 minutes.",
+            "ingredients_added": ["Broccoli florets", "Bell peppers"]
+          },
+          {
+            "instruction": "Pour in soy sauce, stir well, and cook for an additional 2 minutes.",
+            "ingredients_added": ["Soy sauce"]
+          },
+          {
+            "instruction": "Serve hot.",
+            "ingredients_added": []
+          }
+        ]
+      },
+      {
+        "name": "Classic Caesar Salad",
+        "ingredients": [
+          { "description": "Romaine lettuce", "quantity": 1, "unit": "head" },
+          { "description": "Croutons", "quantity": 1, "unit": "cup" },
+          { "description": "Parmesan cheese", "quantity": 50, "unit": "g" },
+          { "description": "Caesar dressing", "quantity": null, "unit": "to taste" }
+        ],
+        "steps": [
+          {
+            "instruction": "Wash and chop the romaine lettuce.",
+            "ingredients_added": ["Romaine lettuce"]
+          },
+          {
+            "instruction": "Add croutons and grated Parmesan cheese to the lettuce.",
+            "ingredients_added": ["Croutons", "Parmesan cheese"]
+          },
+          {
+            "instruction": "Drizzle Caesar dressing over the salad and toss to coat.",
+            "ingredients_added": ["Caesar dressing"]
+          },
+          {
+            "instruction": "Serve chilled.",
+            "ingredients_added": []
+          }
+        ]
+      },
+      {
+        "name": "Vegetable Fried Rice",
+        "ingredients": [
+          { "description": "Cooked rice", "quantity": 2, "unit": "cups" },
+          { "description": "Mixed vegetables", "quantity": 1, "unit": "cup" },
+          { "description": "Soy sauce", "quantity": 2, "unit": "tbsp" },
+          { "description": "Sesame oil", "quantity": 1, "unit": "tsp" },
+          { "description": "Eggs", "quantity": 2, "unit": "" }
+        ],
+        "steps": [
+          {
+            "instruction": "Heat sesame oil in a large pan or wok.",
+            "ingredients_added": ["Sesame oil"]
+          },
+          {
+            "instruction": "Add mixed vegetables and stir-fry until tender.",
+            "ingredients_added": ["Mixed vegetables"]
+          },
+          {
+            "instruction": "Push the vegetables to one side of the pan and scramble the eggs on the other side.",
+            "ingredients_added": ["Eggs"]
+          },
+          {
+            "instruction": "Combine the cooked rice with the vegetables and eggs.",
+            "ingredients_added": ["Cooked rice"]
+          },
+          {
+            "instruction": "Add soy sauce, stir well, and cook for a few more minutes.",
+            "ingredients_added": ["Soy sauce"]
+          },
+          {
+            "instruction": "Serve hot.",
+            "ingredients_added": []
+          }
+        ]
+      },
+      {
+        "name": "Homemade Pizza",
+        "ingredients": [
+          { "description": "Pizza dough", "quantity": 1, "unit": "ball" },
+          { "description": "Tomato sauce", "quantity": 1, "unit": "cup" },
+          { "description": "Mozzarella cheese", "quantity": 200, "unit": "g" },
+          { "description": "Pepperoni slices", "quantity": null, "unit": "to taste" },
+          { "description": "Bell peppers", "quantity": 1, "unit": "sliced" },
+          { "description": "Onion", "quantity": 1, "unit": "sliced" }
+        ],
+        "steps": [
+          {
+            "instruction": "Roll out the pizza dough into a round shape.",
+            "ingredients_added": ["Pizza dough"]
+          },
+          {
+            "instruction": "Spread tomato sauce over the dough.",
+            "ingredients_added": ["Tomato sauce"]
+          },
+          {
+            "instruction": "Sprinkle mozzarella cheese over the sauce.",
+            "ingredients_added": ["Mozzarella cheese"]
+          },
+          {
+            "instruction": "Add pepperoni slices, bell peppers, and sliced onions on top.",
+            "ingredients_added": ["Pepperoni slices", "Bell peppers", "Onion"]
+          },
+          {
+            "instruction": "Bake in a preheated oven at 220°C (425°F) for 12-15 minutes or until the crust is golden and the cheese is bubbly.",
+            "ingredients_added": []
+          },
+          {
+            "instruction": "Slice and serve hot.",
+            "ingredients_added": []
+          }
+        ]
+      }
+    ]
+  }
+  
