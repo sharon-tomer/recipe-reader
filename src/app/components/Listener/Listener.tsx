@@ -8,8 +8,6 @@ export default class Listener {
     private artyom: any;
     next;
     prev;
-    stop;
-    cont;
     ingredients;
     start;
     repeat;
@@ -18,23 +16,22 @@ export default class Listener {
         props: { handles: { 
             next: () => void, 
             prev: () => void, 
-            stop: () => void, 
-            cont: () => void, 
             ingredients: () => void, 
             start: () => void, 
             repeat: () => void 
         }}) {
-        const { next, prev, stop, cont, ingredients, start, repeat } = props.handles;
+        const { next, prev, ingredients, start, repeat } = props.handles;
         this.artyom = new Artyom();
         this.next = next;
         this.prev = prev;
-        this.stop = stop;
-        this.cont = cont;
         this.ingredients = ingredients;
         this.start = start;
         this.repeat = repeat;
-        this.#initArtyom();
     } 
+
+    init() {
+        this.#initArtyom();
+    }
 
     #initArtyom() {
         this.#setCommands();
@@ -52,7 +49,8 @@ export default class Listener {
                 soundex: true,
                 debug:true,
                 speed:1,
-                name: 'sue'
+                name: 'sue',
+                obeyKeyword: /continue|resume/,
             }).then(() => {
                 this.artyom.say(`Hey! I'm Sue, you're personal sous-chef.`);
             });
@@ -82,7 +80,7 @@ export default class Listener {
                 smart:true,
                 action: () => {
                     this.artyom.say('paused. say "continue" to undo.');
-                    this.stop();
+                    this.artyom.dontObay();
                 }
             },
             {
@@ -90,7 +88,6 @@ export default class Listener {
                 smart:true,
                 action: () => {
                     this.artyom.say('resuming...');
-                    this.cont();
                 }
             },
             {
@@ -106,7 +103,6 @@ export default class Listener {
                 smart:true,
                 action: () => {
                     this.artyom.say('resuming...');
-                    this.cont();
                 }
             },
             {

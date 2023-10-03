@@ -40,7 +40,7 @@
           { "description": "Bell peppers", "quantity": 2, "unit": "" },
           { "description": "Soy sauce", "quantity": 2, "unit": "tbsp" },
           { "description": "Garlic", "quantity": 2, "unit": "cloves" },
-          { "description": "Ginger", "quantity": 1, "unit": "inch piece" }
+          { "description": "Ginger", "quantity": 1, "unit": "inch long piece" }
         ],
         "steps": [
           {

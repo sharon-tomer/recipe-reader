@@ -1,5 +1,5 @@
 type Step = {
-    description: string;
+    instruction: string;
     ingredients_added: IngredientName[];
 }
 
@@ -12,28 +12,20 @@ type Ingredient = {
 type IngredientName = string;
 
 export default class Recipe {
-    private name: string;
-    private ingredients: Ingredient[];
-    private steps: Step[];
-    private current: number;
+    name: string;
+    ingredients: Ingredient[];
+    steps: Step[];
 
     constructor (props: {name: string, ingredients: Ingredient[], steps: Step[]}){
         this.name = props.name;
         this.ingredients = props.ingredients;
         this.steps = props.steps;
-        this.current = 0;
     }
 
-    #handleStep(): Step {
-        const res = this.steps[this.current];
-        this.current++;
-        return res;
+    getStep(index?: number) {
+        return this.steps[index || 0];
     }
-
-    public get nextStep(): Step {
-        return this.#handleStep()
-    }
-    public set nextStep(stepNum: number) {
-        this.current = stepNum;
+    getIngredients() {
+        return this.ingredients;
     }
 }
