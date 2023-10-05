@@ -1,6 +1,6 @@
 "use client"
 
-const Artyom = require("artyom.js");
+const Artyom = require("artyom.js").default;
 
 const START_TIMEOUT_MS = 250;
 
@@ -33,6 +33,10 @@ export default class Listener {
         this.#initArtyom();
     }
 
+    read(text: string) {
+        this.artyom.say(text);
+    }
+
     #initArtyom() {
         this.#setCommands();
         this.#listen();
@@ -43,13 +47,13 @@ export default class Listener {
     
         setTimeout(() => {
              this.artyom.initialize({
-                lang:"en-GB",
+                lang:"en-US",
                 continuous:true,
                 listen:true,
                 soundex: true,
                 debug:true,
                 speed:1,
-                name: 'sue',
+                name: /(hey Sue)|(Sue)|(hey soon)|(soon)/,
                 obeyKeyword: /continue|resume/,
             }).then(() => {
                 this.artyom.say(`Hey! I'm Sue, you're personal sous-chef.`);

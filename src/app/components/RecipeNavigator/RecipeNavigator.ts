@@ -1,3 +1,5 @@
+"use client"
+
 import Listener from "../Listener/Listener";
 import Reader from "../Reader/Reader";
 import Recipe from "../Recipe/Recipe";
@@ -8,20 +10,21 @@ export default class RecipeNavigator {
     listener;
     handles;
     recipe;
-    currentStepIndex;
+    private currentStepIndex;
 
     constructor() {
         this.recipe = new Recipe(mockData.recipes[0]);
-        this.reader = new Reader();
+        // this.reader = new Reader();
         this.handles = {
-            next: this.next,
-            prev: this.prev,
-            ingredients: this.ingredients,
-            start: this.start,
-            repeat: this.repeat
+            next: this.next.bind(this),
+            prev: this.prev.bind(this),
+            ingredients: this.ingredients.bind(this),
+            start: this.start.bind(this),
+            repeat: this.repeat.bind(this)
         }
         this.currentStepIndex = 0;
         this.listener = new Listener({handles: this.handles});
+        this.listener.init();
     }
 
     #currentStep() {
@@ -29,19 +32,21 @@ export default class RecipeNavigator {
     }
 
     next() {
-
+        this.listener.read(this.#currentStep());
+        this.currentStepIndex++;
     }
     prev() {
-
+        this.currentStepIndex--;
+        this.listener.read(this.#currentStep());
     }
     ingredients() {
-        this.reader.read(this.recipe.getIngredients().map((item, index) => `${index}) ${item.quantity} ${item.unit} ${item.description}`).join('\n'));
+        this.listener.read(this.recipe.getIngredients().map((item, index) => `${index}) ${item.quantity} ${item.unit} ${item.description}`).join('\n'));
     }
     start() {
         this.currentStepIndex = 0;
-        this.reader.read(this.#currentStep());
+        this.listener.read(this.#currentStep());
     }
     repeat() {
-        this.reader.read(this.#currentStep());
+        this.listener.read(this.#currentStep());
     }
 }

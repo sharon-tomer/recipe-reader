@@ -1,6 +1,10 @@
+"use client"
+
 import Image from 'next/image'
+import RecipeNavigator from './components/RecipeNavigator/RecipeNavigator';
 
 export default function Home() {
+  const navigator = new RecipeNavigator()
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <p className="text-xl top-12 mb-1 flex w-full justify-center">
