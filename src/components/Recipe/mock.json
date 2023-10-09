@@ -2,12 +2,13 @@
     "recipes": [
       {
         "name": "Spaghetti Carbonara",
+        "description": "like in Italy, but worse",
         "ingredients": [
-          { "description": "Spaghetti", "quantity": 200, "unit": "g" },
-          { "description": "Bacon", "quantity": 100, "unit": "g" },
-          { "description": "Eggs", "quantity": 2, "unit": "" },
-          { "description": "Parmesan cheese", "quantity": 50, "unit": "g" },
-          { "description": "Black pepper", "quantity": null, "unit": "to taste" }
+          {"name": "Spaghetti", "quantity": 200, "unit": "g" },
+          {"name": "Bacon", "quantity": 100, "unit": "g" },
+          {"name": "Eggs", "quantity": 2, "unit": "" },
+          {"name": "Parmesan cheese", "quantity": 50, "unit": "g" },
+          {"name": "Black pepper", "quantity": null, "unit": "to taste" }
         ],
         "steps": [
           {
@@ -34,13 +35,15 @@
       },
       {
         "name": "Chicken Stir-Fry",
+        "description": "Make sure chicken is dead before you start cooking",
+        "id": "2",
         "ingredients": [
-          { "description": "Chicken breast", "quantity": 300, "unit": "g" },
-          { "description": "Broccoli florets", "quantity": 1, "unit": "cup" },
-          { "description": "Bell peppers", "quantity": 2, "unit": "" },
-          { "description": "Soy sauce", "quantity": 2, "unit": "tbsp" },
-          { "description": "Garlic", "quantity": 2, "unit": "cloves" },
-          { "description": "Ginger", "quantity": 1, "unit": "inch long piece" }
+          {"name": "Chicken breast", "quantity": 300, "unit": "g" },
+          {"name": "Broccoli florets", "quantity": 1, "unit": "cup" },
+          {"name": "Bell peppers", "quantity": 2, "unit": "" },
+          {"name": "Soy sauce", "quantity": 2, "unit": "tbsp" },
+          {"name": "Garlic", "quantity": 2, "unit": "cloves" },
+          {"name": "Ginger", "quantity": 1, "unit": "inch long piece" }
         ],
         "steps": [
           {
@@ -75,11 +78,13 @@
       },
       {
         "name": "Classic Caesar Salad",
+        "description": "Fanciest lettuce you ever ate",
+        "id": "3",
         "ingredients": [
-          { "description": "Romaine lettuce", "quantity": 1, "unit": "head" },
-          { "description": "Croutons", "quantity": 1, "unit": "cup" },
-          { "description": "Parmesan cheese", "quantity": 50, "unit": "g" },
-          { "description": "Caesar dressing", "quantity": null, "unit": "to taste" }
+          {"name": "Romaine lettuce", "quantity": 1, "unit": "head" },
+          {"name": "Croutons", "quantity": 1, "unit": "cup" },
+          {"name": "Parmesan cheese", "quantity": 50, "unit": "g" },
+          {"name": "Caesar dressing", "quantity": null, "unit": "to taste" }
         ],
         "steps": [
           {
@@ -102,12 +107,14 @@
       },
       {
         "name": "Vegetable Fried Rice",
+        "description": "Eat it while it's food",
+        "id": "4",
         "ingredients": [
-          { "description": "Cooked rice", "quantity": 2, "unit": "cups" },
-          { "description": "Mixed vegetables", "quantity": 1, "unit": "cup" },
-          { "description": "Soy sauce", "quantity": 2, "unit": "tbsp" },
-          { "description": "Sesame oil", "quantity": 1, "unit": "tsp" },
-          { "description": "Eggs", "quantity": 2, "unit": "" }
+          {"name": "Cooked rice", "quantity": 2, "unit": "cups" },
+          {"name": "Mixed vegetables", "quantity": 1, "unit": "cup" },
+          {"name": "Soy sauce", "quantity": 2, "unit": "tbsp" },
+          {"name": "Sesame oil", "quantity": 1, "unit": "tsp" },
+          {"name": "Eggs", "quantity": 2, "unit": "" }
         ],
         "steps": [
           {
@@ -138,13 +145,15 @@
       },
       {
         "name": "Homemade Pizza",
+        "description": "made with real homes!",
+        "id": "5",
         "ingredients": [
-          { "description": "Pizza dough", "quantity": 1, "unit": "ball" },
-          { "description": "Tomato sauce", "quantity": 1, "unit": "cup" },
-          { "description": "Mozzarella cheese", "quantity": 200, "unit": "g" },
-          { "description": "Pepperoni slices", "quantity": null, "unit": "to taste" },
-          { "description": "Bell peppers", "quantity": 1, "unit": "sliced" },
-          { "description": "Onion", "quantity": 1, "unit": "sliced" }
+          {"name": "Pizza dough", "quantity": 1, "unit": "ball" },
+          {"name": "Tomato sauce", "quantity": 1, "unit": "cup" },
+          {"name": "Mozzarella cheese", "quantity": 200, "unit": "g" },
+          {"name": "Pepperoni slices", "quantity": null, "unit": "to taste" },
+          {"name": "Bell peppers", "quantity": 1, "unit": "sliced" },
+          {"name": "Onion", "quantity": 1, "unit": "sliced" }
         ],
         "steps": [
           {
