@@ -56,7 +56,7 @@ export default class Listener {
                 name: /(hey Sue)|(Sue)|(hey soon)|(soon)/,
                 obeyKeyword: /continue|resume/,
             }).then(() => {
-                this.artyom.say(`Hey! I'm Sue, you're personal sous-chef.`);
+                this.artyom.say(`Hey! I'm Sue, your personal sous-chef.`);
             });
         }, START_TIMEOUT_MS);
     }
